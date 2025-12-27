@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4581BD;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: default;
+
+}
+
+.start-box, .game-box, .timeupBox, .gameFinish {
+   background-color: #ffffff;
+   padding: 25px 35px;
+   border-radius: 15px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   width: 320px;
+   margin-bottom: 100px;
+   transition: 0.3s;
+}
+
+.game-box, .timeupBox, .gameFinish {
+    display: none;
+}
+
+h2 {
+    font-size: 30px;
+    color: #130e07;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.restart {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.restart:hover {
+    opacity: 80%;
+    transition: 0.3s;
+    transform: scale(1.09);
+    color: #e64a19;
+}
+
+#rounds {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    cursor: default;
+}
+
+#gameHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#timer {
+    font-size: 15px;
+    font-weight: bold;
+    color: #e64a19;
+    cursor: default;
+}
+
+.scrambled {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #333;
+    cursor: default;
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    border: 2px solid #887979;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: #ff5722;
+    font: 15px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    transition: background 0.2s ease, transform 0.15s ease;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+
+}
+
+button:disabled {
+    background-color: #ccc;
+    transform: none;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Class Lists: */
+.active {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Sramble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>Welcome to Word Scramble! 🔎</h1>
+    <div class="start-box " id="startBox">
+        <h2>Word Scramble🕹️</h2>
+        <div class="scrambled">Click to start the game.</div>
+        <button id="startBtn">🧩START</button>
+    </div>
+    
+    <div class="game-box" id="gameBox">
+        <div id="gameHeader">
+            <div class="restart">
+                <i class="fa fa-refresh" aria-hidden="true" title="Restart" id="restart"></i>
+            </div>
+            <div id="timer"></div>
+            <div id="rounds" ></div>
+        </div>
+        <h2>Word Scramble🕹️</h2>
+        <div class="scrambled" id="playBox"></div>
+        <input type="text" id="guess" placeholder="Type your word here" autocomplete="off">
+        <br/>
+        <button id="chckAns">Check</button>
+        <button class= "hidden" id="nxtWord">Next</button>
+        <button class= "hidden" id="tryAgain">Try Again</button>
+        <div id="result"></div>
+    </div>
+
+    <div class="gameFinish" id="gameFinish">
+        <h2>Congartulations🏅</h2>
+        <div class="scrambled">Game completed!</div>
+        <button id="startNewBtn">🧩Start New</button>
+    </div>
+
+    <div class="timeupBox" id="timeupBox">
+        <div class="scrambled">⏰ Time's up! Game over.</div>
+        <button id="startAgainBtn">🧩Start Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
